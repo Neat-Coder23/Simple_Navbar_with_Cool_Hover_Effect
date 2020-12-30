@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>NavBar With Cool Hover Effect</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="nav">
+        <i class="fas fa-bars menu" id="openm"></i>
+    </div>
+    <div class="navbar" id="navbar">
+        <div class="cross-container">
+            <i class="fas fa-times cross" id="closem"></i>
+        </div>
+        <ul class="nav-items">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Follow Me</li>
+            <li class="nav-item">Contact</li>
+            <li class="nav-item">Lorem ipsum</li>
+            <li class="nav-item">Lorem Ipsum</li>
+            <li class="nav-item">Lorem ipsum</li>
+            <li class="social"><i class="fab fa-youtube"></i><i class="fab fa-github"></i><i class="fab fa-dev"></i><br>&copy; 2020 Neat Coder</li>
+        </ul>
+
+    </div>
+    <script>
+        document.getElementById("openm").onclick = ()=>{
+            document.getElementById("navbar").style.left = "0";
+        }
+        document.getElementById("closem").onclick = ()=>{
+            document.getElementById("navbar").style.left = "-300px";
+        }
+    </script>
+    <script
+    src="https://kit.fontawesome.com/836a943e18.js"
+    crossorigin="anonymous"></script>
+</body>
+</html>
